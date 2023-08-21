@@ -1,1 +1,1 @@
-# Diabetes-Prediction
+# Diabetes-Prediction using Linear Regression
