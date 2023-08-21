@@ -1,0 +1,62 @@
+{% extends "layouts/base.html" %}
+
+
+{% block content %}
+ <div class="col-md-4 offset-md-4 bg-white shadow bordered p-3">
+	<h1>Diabetes Prediction</h1>
+    <form action="" method="post">
+      <div class="form-group mb-3">
+        <label for="Pregnancies" >Pregnancies</label>
+        <select class="form-select" name="Pregnancies">
+          <option value=1>One</option>
+          <option value=2>Two</option>
+          <option value=3>Three</option>
+          <option value=4>Four</option>
+          <option value=5>Five</option>
+          <option value=6>Six</option>
+          <option value=7>Seven</option>
+          <option value=8>Eight</option>
+          <option value=9>Nine</option>
+        </select>
+        
+    </div>
+
+      <div class="form-group">
+        <label for="Glucose">Glucose</label>
+        <input type="text"class="form-control" name="Glucose" placeholder="Glucose" required /><br>
+      </div>
+
+      <div class="form-group">
+        <label for="Glucose">BloodPressure</label>
+        <input type="text" class="form-control"name="BloodPressure" placeholder="BloodPressure" required /><br>
+      </div>
+
+      <div class="form-group">
+        <label for="SkinThickness">SkinThickness</label>
+        <input type="text"class="form-control" name="SkinThickness" placeholder="SkinThickness" required /><br>
+      </div>
+
+      <div class="form-group">
+        <label for="Insulin">Insulin</label>
+        <input type="text"class="form-control" name="Insulin" placeholder="Insulin" required /><br>
+      </div>
+      <div class="form-group">
+        <label for="BMI">BMI</label>
+        <input type="text"class="form-control" name="BMI" placeholder="BMI" required /><br>
+      </div>
+      <div class="form-group">
+        <label for="DiabetesPedigreeFunction">DiabetesPedigreeFunction</label>
+        <input type="text"class="form-control" name="DiabetesPedigreeFunction" placeholder="DiabetesPedigree" required /><br>
+      </div>
+
+      <div class="form-group">
+        <label for="Age">Age</label>
+        <input type="text" class="form-control" name="Age" placeholder="Age" required /><br>
+      </div>
+
+
+        <button type="submit" class="btn btn-outline-primary btn-block  d-block btn-large">Predict</button>
+    </form>
+  </div>
+    {% endblock %}
+
